@@ -1,13 +1,14 @@
 import React from 'react';
 import './watch.css';
 import LazyVideo from "../LazyVideo/LazyVideo";
+import { getVideoUrl } from "../../utils/video";
 
 const Watch = () =>{
     return(
         <div className="watch">
             <p className="title">THROUGH ASHIF LENS</p>
             <h1 className="idName">Storiesbyashif</h1>
-            <video src="/video/Watch_video-Home.mp4" className="watchVideo" loop autoPlay muted></video>
+            <video src={getVideoUrl("/video/Watch_video-Home.mp4")} className="watchVideo" loop autoPlay muted></video>
             <h1 className="storiesTxt">èì‹Ì˜ è¬îèœ</h1>
             <p className="dates">FILMED 22 OCTOBER 2025</p>
             <p className="storiesDes">Nestled in the serene landscapes of Kadambur Hills, Sathyamangalam, life here is a beautiful blend of nature, simplicity, and resilience.

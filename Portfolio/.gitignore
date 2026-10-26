@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+
+# Video assets (hosted on Cloudinary)
+public/video/
+*.mp4
+

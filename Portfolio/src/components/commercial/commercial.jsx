@@ -1,6 +1,7 @@
 import React from 'react';
 import './commercial.css';
 import LazyVideo from "../LazyVideo/LazyVideo";
+import { getVideoUrl } from "../../utils/video";
 
 const Commercial = () =>{
     return(
@@ -25,7 +26,7 @@ const Commercial = () =>{
           <img src="./img/fve.png" alt="" className="dn" />
           <img src="./img/We Luv Erode Logo.png" alt="" className="er" />
        </div>
-       <video src="/video/StudioVideo-Home.mp4" className="studioVideo" loop autoPlay controls muted></video>
+       <video src={getVideoUrl("/video/StudioVideo-Home.mp4")} className="studioVideo" loop autoPlay controls muted></video>
         </div>
     )
 }

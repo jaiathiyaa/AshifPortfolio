@@ -1,6 +1,7 @@
 import React from "react";
 import "./recent.css";
 import LazyVideo from "../LazyVideo/LazyVideo";
+import { getVideoUrl } from "../../utils/video";
 
 const RecentWorks = () => {
   return (
@@ -10,7 +11,7 @@ const RecentWorks = () => {
 
       {/* HERO VIDEO (normal video, not lazy) */}
       <video className="hero-video"
-        src="/video/2025-Wrapped-Video.mp4"
+        src={getVideoUrl("/video/2025-Wrapped-Video.mp4")}
         loop
         autoPlay
         muted

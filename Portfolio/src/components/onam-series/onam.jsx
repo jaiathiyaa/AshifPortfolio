@@ -1,5 +1,6 @@
 import React from "react";
 import "./onam.css";
+import { getVideoUrl } from "../../utils/video";
 
 const videos = [
   "OnamLoop1.mp4",
@@ -32,7 +33,7 @@ const Onam = () => {
           {DUPLICATED.map((v, i) => (
             <div className="card" key={i}>
               <video
-                src={`/video/${v}`}
+                src={getVideoUrl(v)}
                 autoPlay
                 loop
                 muted
@@ -50,7 +51,7 @@ const Onam = () => {
           {DUPLICATED_REVERSE.map((v, i) => (
             <div className="cardReverse" key={i}>
               <video
-                src={`/video/${v}`}
+                src={getVideoUrl(v)}
                 autoPlay
                 loop
                 muted

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import "./Lazyvideo.css";
+import "./LazyVideo.css";
+import { getVideoUrl } from "../../utils/video";
 
 const LazyVideo = ({
   src,
@@ -31,7 +32,7 @@ const LazyVideo = ({
     <div ref={wrapperRef} className="lazy-video-wrapper">
       {isVisible && (
         <video
-          src={src}
+          src={getVideoUrl(src)}
           poster={poster}
           controls
           preload={preload}
